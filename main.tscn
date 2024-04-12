@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://igh2mlwh0pfm"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_emlus"]
+size = Vector2(50, 50)
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_q3srr"]
+
+[node name="Main" type="Node2D"]
+metadata/_edit_lock_ = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(0, 280)
+collision_mask = 2
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+scale = Vector2(11.52, 0.8)
+texture = SubResource("PlaceholderTexture2D_emlus")
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("WorldBoundaryShape2D_q3srr")

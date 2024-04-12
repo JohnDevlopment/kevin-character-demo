@@ -1,0 +1,10 @@
+# -*- mode: sh; -*-
+
+history -c
+
+#PS1='\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+
+PS1='(subshell) \e[1;32m\u:\e[1;34m\W\a\e[0m'
+PS1='(subshell) \[\e]0;\u: \W\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\W\[\033[00m\]\$ '
+
+alias git-gui="execnohup --sleep 2 -n 2 git gui; unalias git-gui; history -s execnohup --sleep 2 -n 2 git gui"
