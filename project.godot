@@ -12,9 +12,11 @@ config_version=5
 
 config/name="Kevin Character Demo"
 config/version="0.1"
+config/tags=PackedStringArray("game", "godot_4.2")
 run/main_scene="res://main.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
+
 [autoload]
 
 LoggingConfig="*res://addons/logging/LoggingConfig.gd"
